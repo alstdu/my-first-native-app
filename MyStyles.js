@@ -27,6 +27,13 @@ const MyStyles = StyleSheet.create({
     borderTopStartRadius: 190,
     overflow: 'hidden',
     marginTop: 70
+  },
+  input: {
+    width: "50%",
+    padding: 4,
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    margin: 10
   }
 });
 
