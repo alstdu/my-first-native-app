@@ -8,7 +8,9 @@ export default function SignUpScreen({ navigation }) {
       <TouchableOpacity
         style={MyStyles.ButtonContainer}
         onPress={() => navigation.navigate("Invite")}>
-          <Text>Continue</Text>
+          <Text
+          style={MyStyles.ButtonText}
+          >Continue</Text>
       </TouchableOpacity>
     </View>
   );
