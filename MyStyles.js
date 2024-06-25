@@ -32,8 +32,16 @@ const MyStyles = StyleSheet.create({
     width: "50%",
     padding: 4,
     backgroundColor: "#fff",
-    borderRadius: 10,
+    borderRadius: 30,
     margin: 10
+  },
+  InputContainer: {
+    backgroundColor: '#DBDBD9',
+    width: '100%',
+    height: '75%',
+    borderRadius: 30,
+    alignItems: 'center',
+    justifyContent: 'center',
   }
 });
 
