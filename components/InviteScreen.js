@@ -2,6 +2,8 @@ import React from "react";
 import { View, Text, FlatList, Button, SafeAreaView, TouchableOpacity, } from "react-native";
 import MyStyles from "../MyStyles";
 
+// Used as a list of contacts 
+// Each object contains the id, photo, name, and number
 const DATA = [
   {
     id: 'contact1',
@@ -56,6 +58,11 @@ export default function InviteScreen() {
         </TouchableOpacity>
       </View>
       <View style={MyStyles.InviteContainer}>
+        {/* Create a list of contact items using the FlatList component.
+        The 'data' prop is set to 'DATA' which is the array containing the contact info.
+        Each item in the list is rendered using the 'ContactView' component, 
+        which displays the contact's photo, name, and phone number.
+        The 'keyExtractor' prop ensures each item has a unique key based on its 'id' property.*/}
         <FlatList
           data={DATA}
           renderItem={({ item }) => <ContactView photo={item.photo} title={item.title} number={item.number} />}
