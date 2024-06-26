@@ -39,11 +39,11 @@ const MyStyles = StyleSheet.create({
         marginTop: 70
     },
     input: {
-        width: "50%",
+        width: "100%",
         padding: 4,
         backgroundColor: "#fff",
         borderRadius: 30,
-        margin: 10
+        marginBottom: 30
     },
     InputContainer: {
         backgroundColor: '#DBDBD9',
@@ -51,8 +51,9 @@ const MyStyles = StyleSheet.create({
         height: '70%',
         borderTopStartRadius: 30,
         borderTopEndRadius: 30,
-        alignItems: 'center',
+        alignItems: 'left',
         justifyContent: 'center',
+        padding: 50,
     },
     InviteContainer: {
         backgroundColor: '#DBDBD9',
