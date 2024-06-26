@@ -4,12 +4,13 @@ import MyStyles from "../MyStyles";
 export default function SignUpScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "flex-end", backgroundColor: "white" }}>
-      <View>
+      <View style={{marginTop: 40, marginLeft: 20, position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}>
         <Text
           style={MyStyles.Heading}
         >
           Let's Get Started
         </Text>
+        <Text>Get ready for a unique experience!</Text>
       </View>
       <View style={MyStyles.InputContainer}>
         <Text>Name</Text>
