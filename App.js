@@ -5,6 +5,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 // Creating the stack
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+// Import the screen files
 import GetStartedScreen from './components/GetStartedScreen';
 import SignUpScreen from './components/SignUpScreen';
 import InviteScreen from './components/InviteScreen';
@@ -20,14 +21,17 @@ export default function App() {
         <Stack.Screen
           name="GetStarted"
           component={GetStartedScreen}
+          options={{ title: 'Welcome' }} // This sets the title of the screen
         />
         <Stack.Screen
           name="SignUp"
           component={SignUpScreen}
+          options={{ title: 'Sign Up' }}
         />
         <Stack.Screen
           name="Invite"
           component={InviteScreen}
+          options={{ title: 'Invite' }}
         />
       </Stack.Navigator>
     </NavigationContainer>
