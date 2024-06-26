@@ -10,13 +10,13 @@ export default function GetStartedScreen({ navigation }) {
                 style={MyStyles.HomeBgImage}
                 source={require('../assets/splashyoga.jpg')}>
             </ImageBackground>
-            <View style={{margin: 20, position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}>
+            <View style={{margin: 15, position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}>
                 <Text
                     style={MyStyles.Heading}
                 >
                     Discover Yoga with Friends
                 </Text>
-                <Text>Discover a new way to stay connected and healthy with our revolutionary yoga app!
+                <Text style={{paddingRight: 50}}>Discover a new way to stay connected and healthy with our revolutionary yoga app!
                     Join live sessions, share your progress, and motivate each other in real-time.
                     Download now and elevate your yoga practice together</Text>
                 <TouchableOpacity
