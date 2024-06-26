@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, FlatList, Button, SafeAreaView, TouchableOpacity, } from "react-native";
+import { View, Text, FlatList, Button, SafeAreaView, TouchableOpacity,Image } from "react-native";
 import MyStyles from "../MyStyles";
 
 // Used as a list of contacts 
@@ -64,24 +64,37 @@ export default function InviteScreen() {
         which displays the contact's photo, name, and phone number.
         The 'keyExtractor' prop ensures each item has a unique key based on its 'id' property.*/}
         <FlatList
+          contentContainerStyle={{justifyContent: "space-evenly", height: "100%"}}
           data={DATA}
           renderItem={({ item }) => <ContactView photo={item.photo} title={item.title} number={item.number} />}
           keyExtractor={item => item.id}
         />
-        <View>
+        <View style={{justifyContent: "space-evenly"}}>
+          {/* Temporary elements. Eventually use contact permissions to decide when to show add or invite */}
         <TouchableOpacity
-          style={MyStyles.AddButton}
-          onPress={() => navigation.navigate("Invite")}>
+          style={MyStyles.AddButton}>
           <Text
             style={MyStyles.ButtonText}
           >Add</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={MyStyles.AddButton}
-          onPress={() => navigation.navigate("Invite")}>
+          style={MyStyles.AddButton}>
           <Text
             style={MyStyles.ButtonText}
           >Add</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+        style={MyStyles.InviteButton}>
+            <Image
+              source={require('../assets/inviteButton.png')}>
+            </Image>
+        </TouchableOpacity>
+        <TouchableOpacity
+        style={MyStyles.InviteButton}>
+            <Image
+              source={require('../assets/inviteButton.png')}>
+            </Image>
         </TouchableOpacity>
         </View>
       </View>
