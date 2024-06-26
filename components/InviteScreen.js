@@ -68,6 +68,22 @@ export default function InviteScreen() {
           renderItem={({ item }) => <ContactView photo={item.photo} title={item.title} number={item.number} />}
           keyExtractor={item => item.id}
         />
+        <View>
+        <TouchableOpacity
+          style={MyStyles.AddButton}
+          onPress={() => navigation.navigate("Invite")}>
+          <Text
+            style={MyStyles.ButtonText}
+          >Add</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={MyStyles.AddButton}
+          onPress={() => navigation.navigate("Invite")}>
+          <Text
+            style={MyStyles.ButtonText}
+          >Add</Text>
+        </TouchableOpacity>
+        </View>
       </View>
     </View>
   );

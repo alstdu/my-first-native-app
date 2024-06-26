@@ -7,13 +7,18 @@ const MyStyles = StyleSheet.create({
         fontWeight: 'bold',
         marginTop: 10,
     },
+    // THIS IS TEMPORARY until I can figure out how to configure
+    // contact permissions (probably boolean 'contact found in system true/false')
+    // for now, simulate the functionality
     AddButton: {
-        padding: 8,
-        color: 'white',
-        fontWeight: 'bold',
+        backgroundColor: '#366AF5',
+        marginTop: 16,
+        borderRadius: 50,
+        width: 50,
+        height: 20,
     },
     ButtonContainer: {
-        padding: 10,
+        padding: 5,
         backgroundColor: '#366AF5',
         borderRadius: 50,
         width: 130,
@@ -63,7 +68,8 @@ const MyStyles = StyleSheet.create({
         borderTopEndRadius: 30,
         alignItems: 'left',
         justifyContent: 'center',
-        padding: 30,
+        padding: 20,
+        flexDirection: 'row',
     },
     Circle: {
         backgroundColor: 'blue',
