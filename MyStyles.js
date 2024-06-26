@@ -17,6 +17,10 @@ const MyStyles = StyleSheet.create({
         width: 50,
         height: 20,
     },
+    InviteButton: {
+        marginTop: 17,
+        alignItems: 'center',
+    },
     ButtonContainer: {
         padding: 5,
         backgroundColor: '#366AF5',
@@ -66,8 +70,6 @@ const MyStyles = StyleSheet.create({
         height: '60%',
         borderTopStartRadius: 30,
         borderTopEndRadius: 30,
-        alignItems: 'left',
-        justifyContent: 'center',
         padding: 20,
         flexDirection: 'row',
     },
